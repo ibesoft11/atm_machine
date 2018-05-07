@@ -11,6 +11,9 @@ function atm(){
         accountBalance +=amountToDeposit;
         return console.log("Credit alert, your account has been deposited with the sum of : " + amountToDeposit);
     }
+    this.viewCredentials = function(){
+        console.log("Default password is :"+defaultPassword);
+    }
     this.changePassword = function(oldPassword, newPassword){
         if (oldPassword == defaultPassword){
             defaultPassword = newPassword;
